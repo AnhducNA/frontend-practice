@@ -1,0 +1,96 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(30px);
+  padding-right: 48px;
+
+  & &__navbar {
+    ul li {
+      a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        letter-spacing: 0.0125em;
+        color: #3B4144;
+        opacity: 0.5;
+      }
+
+      a.active {
+        color: #3B4144;
+        opacity: 1;
+      }
+
+    }
+  }
+
+  & &__logo {
+    h3 {
+
+    }
+  }
+
+  & &__navbar2 {
+    align-items: center;
+
+    .icon-heart {
+      color: #3B4144;
+
+      span {
+        background-color: #D93C23;
+        border: 2px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .btn-add_post {
+      border-radius: 20px;
+      padding: 7.5px 24px;
+      margin: 0 20px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.0125em;
+      color: #FFFFFF;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+    }
+    h3, p{
+      font-style: normal;
+      margin: 0;
+      text-align: right;
+    }
+    h3.name{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #272727;
+    }
+    p{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.001em;
+      color: #272727;
+      opacity: 0.5;
+    }
+    .avatar{
+      border-radius: 24px;
+      margin-left: 10px;
+      img{
+        width: 36px;
+      }
+    }
+  }
+}
