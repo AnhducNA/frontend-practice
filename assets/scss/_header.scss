@@ -37,6 +37,11 @@
     }
   }
 
+  & &__menu-md {
+    width: 24px;
+    margin-right: 24px;
+  }
+
   & &__logo {
     display: block;
   }
@@ -44,14 +49,15 @@
   & &__navbar2 {
     align-items: center;
 
-    .icon-heart {
+    .icon {
       transition: 0.5s;
       color: #3B4144;
       font-size: 20px;
       position: relative;
+      margin-right: 20px;
     }
 
-    .icon-heart:after {
+    .icon:after {
       width: 9px;
       height: 9px;
       background: red;
@@ -63,7 +69,7 @@
       border: 1px solid #FFFFFF;
     }
 
-    .icon-heart:hover {
+    .icon:hover {
       color: red;
     }
 
@@ -75,28 +81,31 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 17px;
-      /* identical to box height */
       text-align: center;
       letter-spacing: 0.0125em;
       color: #FFFFFF;
-      /* Inside auto layout */
       flex: none;
       order: 0;
       flex-grow: 1;
+      display: none;
     }
 
-    h3, p {
-      font-style: normal;
-      margin: 0;
-      text-align: right;
-    }
+    .name-post {
+      display: none;
+      p {
+        font-style: normal;
+        margin: 0;
+        text-align: right;
+      }
 
-    h3.name {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-      letter-spacing: 0.0125em;
-      color: #272727;
+      .p-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0125em;
+        color: #272727;
+      }
+
     }
 
     p {
@@ -114,6 +123,77 @@
 
       img {
         width: 36px;
+      }
+    }
+  }
+
+}
+
+.dropdown-menu-md {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  .box-top {
+    margin: 44px 22px;
+    text-align: left;
+    display: flex;
+
+    .btn-close-menu-md {
+      margin-right: 16px;
+    }
+  }
+
+  .box-content {
+    margin: 95px 22px;
+    text-align: left;
+  }
+
+  .box-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 130px;
+    width: 100%;
+
+    .box-addPost {
+      display: block;
+      margin: 12px 0px;
+    }
+
+    .box-user {
+      .btn {
+        padding: 10px 55px;
+        width: 45%;
+      }
+    }
+  }
+
+  .navbar {
+    display: block;
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+
+      .nav-item {
+        margin-bottom: 20px;
+
+        .nav-link {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 27px;
+          letter-spacing: -0.03em;
+          color: #272727;
+          opacity: 0.5;
+        }
       }
     }
   }
