@@ -187,6 +187,7 @@
     }
 
     .video {
+
       .box-top {
         margin: 0 !important;
       }
@@ -212,6 +213,9 @@
           flex-wrap: initial;
           justify-content: flex-start;
           max-height: 400px!important;
+          .sub-video-item{
+            flex-basis: auto !important;
+          }
         }
       }
     }
