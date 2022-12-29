@@ -517,6 +517,13 @@ p {
   margin-top: 42px;
 }
 
+.video-page .video-content {
+  flex-direction: column;
+}
+.video-page .video-content .main-video {
+  width: 100%;
+}
+
 #content {
   padding: 75px 36px;
 }
@@ -616,8 +623,8 @@ p {
 }
 #content .container .box .box-top .pause-video {
   position: absolute;
-  top: 35%;
-  left: 40%;
+  top: 39%;
+  left: 45%;
   background: linear-gradient(93.91deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
   width: 96px;
   height: 96px;
@@ -983,6 +990,42 @@ p {
   }
   #content .carousel .carousel-indicators {
     display: flex;
+  }
+  #content.video-page .video-content {
+    flex-direction: column !important;
+  }
+  #content.video-page .video-content .main-video {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
+    flex: 0 0 100%;
+  }
+  #content.video-page .video-content .p-all-video {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+  #content.video-page .video-content .sub-video {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
+    flex: 0 0 100%;
+    max-height: fit-content !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  #content.video-page .video-content .sub-video .sub-video-item {
+    padding: 0 !important;
+    max-width: 48.7% !important;
+    flex: 0 0 48.7%;
+    margin-bottom: 36px !important;
+  }
+  #content.video-page .video-content .sub-video .sub-video-item .box-top {
+    margin-bottom: 16px !important;
   }
 }
 

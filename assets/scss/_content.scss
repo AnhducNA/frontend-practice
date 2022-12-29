@@ -4,6 +4,17 @@
     margin-top: 42px;
   }
 }
+
+.video-page {
+  .video-content {
+    flex-direction: column;
+
+    .main-video {
+      width: 100%;
+    }
+  }
+}
+
 #content {
   padding: 75px 36px;
 
@@ -127,8 +138,8 @@
 
         .pause-video {
           position: absolute;
-          top: 35%;
-          left: 40%;
+          top: 39%;
+          left: 45%;
           background: linear-gradient(93.91deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
           width: 96px;
           height: 96px;
