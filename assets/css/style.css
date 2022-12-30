@@ -1375,6 +1375,8 @@ p {
     max-width: 331px;
     margin: 0 auto;
     text-align: left;
+    margin-right: 65px;
+    margin-bottom: 36px;
   }
   .box-btn .btn p span {
     margin-left: 5px;
