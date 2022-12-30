@@ -2,6 +2,9 @@
 .list-news-page {
   .list-news {
     margin-top: 42px;
+    .item-news{
+      margin-bottom: 36px;
+    }
   }
 }
 
@@ -136,10 +139,14 @@
         position: relative;
         margin-bottom: 16px;
 
+        img {
+          object-fit: cover;
+        }
+
         .pause-video {
           position: absolute;
           top: 39%;
-          left: 45%;
+          left: 43%;
           background: linear-gradient(93.91deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
           width: 96px;
           height: 96px;
@@ -295,7 +302,6 @@
           .box-top {
             position: relative;
 
-
             .box-content {
               position: absolute;
               top: 80%;
@@ -322,9 +328,9 @@
               margin-bottom: 8px;
 
               .pause-video {
-                width: 48px !important;
-                height: 48px !important;
-                padding: 14px !important;
+                width: 48px ;
+                height: 48px ;
+                padding: 14px ;
               }
             }
 
@@ -375,21 +381,23 @@
       }
 
       .list-news-content {
-        .item-news {
+        .item-news-item {
           flex-wrap: initial;
           margin: 0 0 36px 0;
 
           .box-top {
-            margin: 0;
 
-            img {
-              width: 336px;
-            }
           }
-
+          .p-content {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.005em;
+            opacity: 0.5;
+          }
           .box-content {
+            padding: 0;
             width: 100%;
-            padding: 21px 0 0 21px;
           }
         }
       }
