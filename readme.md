@@ -21,6 +21,7 @@ yarn run prod
 ```
 ## Responsive trên màn hình:
 - 375px
+- 480px
 - 768px
 - 1024px
 ## Công nghệ sử dụng:
