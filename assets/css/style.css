@@ -828,9 +828,6 @@ p {
   width: 48px;
   height: 48px;
   padding: 14px;
-  position: absolute;
-  top: 24%;
-  left: 37%;
 }
 #content .container .video .video-content .sub-video .sub-video-item .box-content .p-title {
   font-weight: 600;
@@ -964,14 +961,6 @@ p {
   #content .video .video-content .main-video .pause-video img {
     width: 17px;
   }
-  #content .video .video-content .sub-video .pause-video {
-    width: 36px !important;
-    height: 36px !important;
-    padding: 10px !important;
-  }
-  #content .video .video-content .sub-video .pause-video img {
-    width: 12.5px;
-  }
   #content .video .video-content .sub-video {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -985,6 +974,14 @@ p {
   #content .video .video-content .sub-video .sub-video-item {
     width: 65.3%;
     flex: 0 0 65.3%;
+  }
+  #content .video .video-content .sub-video .sub-video-item .pause-video {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 10px !important;
+  }
+  #content .video .video-content .sub-video .sub-video-item .pause-video img {
+    width: 12.5px;
   }
   #content .video .video-content .sub-video .sub-video-item .box-content .p-title {
     font-size: 13px !important;
@@ -1082,6 +1079,11 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+  #content.video-page .video .video-content .sub-video .sub-video-item .pause-video {
+    position: absolute;
+    top: 39%;
+    left: 45%;
+  }
   #content {
     padding: 80px 44px;
   }
@@ -1131,6 +1133,11 @@ p {
     flex-basis: auto !important;
     width: 100%;
     flex: 0 0 100%;
+  }
+  #content .video .video-content .sub-video .sub-video-item .pause-video {
+    position: absolute;
+    top: 24%;
+    left: 37%;
   }
   #content .list-news .list-news-content .item-news-item .box-top {
     width: 336px;
@@ -1185,6 +1192,7 @@ p {
     line-height: 27px;
     margin-top: 36px;
     margin-bottom: 24px;
+    display: block;
   }
   #content.video-page .video-content .sub-video {
     width: 100%;
