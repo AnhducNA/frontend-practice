@@ -32,7 +32,9 @@
       overflow: hidden;
 
       .carousel-item-next, .carousel-item-prev, .carousel-item.active {
-        display: block;
+        display: block;    position: absolute;
+    top: 28%;
+    left: 37%;
       }
 
       .carousel-item {
@@ -331,6 +333,9 @@
                 width: 48px ;
                 height: 48px ;
                 padding: 14px ;
+                position: absolute;
+                top: 24%;
+                left: 37%;
               }
             }
 
