@@ -11,3 +11,5 @@
 ![list-new.png](list-new.png)
 ## video.html:
 ![video-page.png](video-page.png)
+## detail page.html:
+![detail-page-lg.png](detail-page-lg.png)
