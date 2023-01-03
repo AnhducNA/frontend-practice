@@ -283,6 +283,12 @@
 
 @media (min-width: 768px) {
   .header {
+    & &__navbar2{
+      .name-post{
+        display: block!important;
+      }
+    }
+
     & &__menu-md {
       width: 24px;
       margin-right: 24px;
