@@ -1085,6 +1085,19 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+  #content.list-news-page .list-news .list-news-content .item-news {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #content.list-news-page .list-news .list-news-content .item-news .box-top {
+    width: 36%;
+    flex: 0 0 36%;
+  }
+  #content.list-news-page .list-news .list-news-content .item-news .box-content {
+    width: 62%;
+    flex: 0 0 62%;
+  }
   #content.video-page .video .video-content .sub-video .sub-video-item .pause-video {
     position: absolute;
     top: 39%;

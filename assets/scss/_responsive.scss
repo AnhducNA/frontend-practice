@@ -93,10 +93,12 @@
           padding: 12px;
           margin-bottom: 24px;
         }
-        .sub-news-item:first-child{
+
+        .sub-news-item:first-child {
           padding-left: 0;
         }
-        .sub-news-item:last-child{
+
+        .sub-news-item:last-child {
           padding-right: 0;
         }
       }
@@ -123,7 +125,6 @@
         }
 
 
-
         .sub-video {
           overflow-x: auto !important;
           overflow-y: hidden !important;
@@ -137,6 +138,7 @@
           .sub-video-item {
             width: 65.3%;
             flex: 0 0 65.3%;
+
             .pause-video {
               width: 36px !important;
               height: 36px !important;
@@ -146,6 +148,7 @@
                 width: 12.5px;
               }
             }
+
             .box-content {
               .p-title {
                 font-size: 13px !important;
@@ -283,9 +286,9 @@
 
 @media (min-width: 768px) {
   .header {
-    & &__navbar2{
-      .name-post{
-        display: block!important;
+    & &__navbar2 {
+      .name-post {
+        display: block !important;
       }
     }
 
@@ -298,10 +301,32 @@
     width: 100%;
     margin: 0 auto;
   }
-  #content.video-page{
-    .video .video-content {
-      .p-all-video{
+  #content.list-news-page {
+    .list-news {
+      .list-news-content {
+        .item-news {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+
+          .box-top {
+            width: 36%;
+            flex: 0 0 36%;
+          }
+
+          .box-content {
+            width: 62%;
+            flex: 0 0 62%;
+          }
+        }
       }
+    }
+  }
+  #content.video-page {
+    .video .video-content {
+      .p-all-video {
+      }
+
       .sub-video .sub-video-item .pause-video {
         position: absolute;
         top: 39%;
@@ -371,7 +396,8 @@
             flex-basis: auto !important;
             width: 100%;
             flex: 0 0 100%;
-            .pause-video{
+
+            .pause-video {
               position: absolute;
               top: 24%;
               left: 37%;
